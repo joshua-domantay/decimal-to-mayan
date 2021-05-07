@@ -5,6 +5,12 @@
 def getDigits(n, arr):
     pass
 
+def printTopBottom(arr):
+    pass
+
+def printMid(arr):
+    pass
+
 def convert(n):
     return "x"
 

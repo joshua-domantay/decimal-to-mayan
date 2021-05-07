@@ -6,12 +6,16 @@ def getDigits(n, arr):
     pass
 
 def printTopBottom(arr):
-    pass
+    for i in range(len(arr)):
+        print("+----", end="")
+    print("+\n")
 
 def printMid(arr):
     pass
 
 def convert(n):
+    arr = []
+    arr = getDigits(n, arr)
     return "x"
 
 digit = input("Enter decimal digit: ")

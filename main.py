@@ -44,6 +44,9 @@ def printMid(arr):
 def convert(n):
     arr = []
     arr = getDigits(n, arr)
+    printTopBottom(arr)
+    printMid(arr)
+    printTopBottom(arr)
     return "x"
 
 digit = input("Enter decimal digit: ")
@@ -51,7 +54,6 @@ try:
     digit = int(digit)
     if(digit > 0):
         x = convert(digit)
-        print(x)
     else:
         print("Digit must be greater than 0")
 except:

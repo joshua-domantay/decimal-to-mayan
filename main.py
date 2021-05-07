@@ -3,7 +3,19 @@
 # 6 May 2021
 
 def getDigits(n, arr):
-    pass
+    while(n != 0):
+        arr.append(int(n % 20))
+        n = int(n / 20)
+    
+    i = 0
+    j = len(arr) - 1
+    while(j > i):
+        x = arr[j]
+        arr[j] = arr[i]
+        arr[i] = x
+        j -= 1
+        i += 1
+    return arr
 
 def printTopBottom(arr):
     for i in range(len(arr)):
@@ -47,7 +59,6 @@ def convert(n):
     printTopBottom(arr)
     printMid(arr)
     printTopBottom(arr)
-    return "x"
 
 digit = input("Enter decimal digit: ")
 try:
